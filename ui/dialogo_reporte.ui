@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReporteDialog</class>
+ <widget class="QDialog" name="ReporteDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Nuevo Reporte</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label_titulo">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Información del Reporte</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_tipo">
+       <property name="text">
+        <string>Tipo de problema:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QComboBox" name="cb_tipo">
+       <item>
+        <property name="text">
+         <string>Basura</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Iluminación</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Bache</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Agua</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Otro</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_descripcion">
+       <property name="text">
+        <string>Descripción:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QTextEdit" name="txt_descripcion">
+       <property name="maximumHeight">
+        <number>80</number>
+       </property>
+       <property name="placeholderText">
+        <string>Describa el problema detalladamente...</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_direccion">
+       <property name="text">
+        <string>Dirección:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="txt_direccion">
+       <property name="placeholderText">
+        <string>Ingrese la dirección del problema</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_estado">
+       <property name="text">
+        <string>Estado:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QComboBox" name="cb_estado">
+       <item>
+        <property name="text">
+         <string>Pendiente</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>En Proceso</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Resuelto</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_fecha">
+       <property name="text">
+        <string>Fecha:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QDateEdit" name="fecha_reporte">
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_observaciones">
+       <property name="text">
+        <string>Observaciones:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QTextEdit" name="txt_observaciones">
+       <property name="maximumHeight">
+        <number>80</number>
+       </property>
+       <property name="placeholderText">
+        <string>Observaciones adicionales (opcional)</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="btn_aceptar">
+       <property name="text">
+        <string>✅ Aceptar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_cancelar">
+       <property name="text">
+        <string>❌ Cancelar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
