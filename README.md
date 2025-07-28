@@ -165,10 +165,5 @@ Las contribuciones son bienvenidas. Por favor:
 3. Haz commit de tus cambios
 4. Abre un Pull Request
 
-## 📞 Contacto
 
-Para preguntas o sugerencias, abre un issue en GitHub.
 
----
-
-**Desarrollado con ❤️ usando Python y PyQt5** 
